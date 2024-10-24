@@ -1,0 +1,165 @@
+/* Basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('avengers-minimalist.jpg');
+    background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center center; /* Centra la imagen en la página */
+    height: 75vh; /* Ajusta la altura para ocupar toda la ventana */
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  header, footer {
+    padding: 5px;
+  }
+  
+  footer {
+    margin-top: 28%;
+  }
+
+  footer p {
+    margin-top: 0;
+  }
+  
+  /* Carousel styling */
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  /* Search input and button styling */
+  .input-group {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #characterResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: none;
+ }
+
+ #searchButton {
+    background-color: rgb(49, 49, 49);
+    border: none;
+ }
+
+  /* Character result cards */
+  .card {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 2px;
+    padding: 10px;
+    border: 1px solid #3b3b3b54;
+    align-items: center;
+    background-color: #a3a3a354;
+    transition: transform 0.2s; /* Suaviza la animación */
+    width: 100%;
+    height: 90%;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+
+  .card-img-top {
+    max-width: 80%;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    margin-top: 10px;
+    font-size:1rem;    
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .character-card p {
+    margin-top: 10px;
+    font-size: 0.5rem;
+
+  }
+
+  .autocomplete-list {
+    position: absolute; /* Coloca la lista de sugerencias encima de otros elementos */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    background-color: white; /* Fondo blanco para la lista */
+    border: 1px solid #ccc; /* Borde gris */
+    max-height: 200px; /* Altura máxima */
+    overflow-y: auto; /* Habilita el desplazamiento si hay muchas opciones */
+    width: 45%; /* Igual al ancho del input */
+    display: none; /* Oculta por defecto */
+    margin-left: 19%;
+}
+
+.autocomplete-item {
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.autocomplete-item:hover {
+    background-color: #f0f0f0; /* Cambia el fondo al pasar el mouse */
+}
+  
+/*Responsive design*/
+
+  @media (max-width: 767px) {
+    footer {
+        margin-top: 100%;
+      }
+    
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url('avengers-minimalist.jpg');
+        background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
+        background-repeat: no-repeat; /* Evita que se repita */
+        background-position: center center; /* Centra la imagen en la página */
+        height: 100vh; /* Ajusta la altura para ocupar toda la ventana */
+        margin: 0;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+
+    .card {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .autocomplete-list {
+        width: 92%;
+        margin-left: 1%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        margin-top: 100%;
+      }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url('avengers-minimalist.jpg');
+        background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
+        background-repeat: no-repeat; /* Evita que se repita */
+        background-position: center center; /* Centra la imagen en la página */
+        height: 100vh; /* Ajusta la altura para ocupar toda la ventana */
+        margin: 0;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+
+    .autocomplete-list {
+        width: 73%;
+        margin-left: 6%;
+    }
+  }
