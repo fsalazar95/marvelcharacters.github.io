@@ -11,7 +11,7 @@ main {
     background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
     background-repeat: no-repeat; /* Evita que se repita */
     background-position: center center; /* Centra la imagen en la página */
-    height: 75vh; /* Ajusta la altura para ocupar toda la ventana */
+    height: 100vh; /* Ajusta la altura para ocupar toda la ventana */
     margin: 0;
   }
 
